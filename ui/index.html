@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-primary": "#cec1de",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#d8e5e2",
+                    "tertiary-fixed": "#eadef6",
+                    "on-secondary": "#ffffff",
+                    "primary-container": "#afa3bf",
+                    "on-tertiary-fixed-variant": "#4c4357",
+                    "surface": "#eefcf8",
+                    "surface-variant": "#d8e5e2",
+                    "on-secondary-container": "#476960",
+                    "secondary": "#43655c",
+                    "on-secondary-fixed-variant": "#2b4d45",
+                    "background": "#eefcf8",
+                    "primary-fixed-dim": "#cec1de",
+                    "error": "#ba1a1a",
+                    "on-tertiary": "#ffffff",
+                    "on-surface": "#121e1c",
+                    "secondary-fixed-dim": "#a9cec3",
+                    "surface-container-low": "#e9f7f3",
+                    "inverse-surface": "#263330",
+                    "surface-bright": "#eefcf8",
+                    "outline-variant": "#cbc4cd",
+                    "on-surface-variant": "#49454c",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-fixed": "#1f182a",
+                    "on-background": "#121e1c",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#4c435a",
+                    "primary-fixed": "#ebddfb",
+                    "inverse-on-surface": "#e6f4f0",
+                    "tertiary-fixed-dim": "#cec2da",
+                    "tertiary-container": "#afa4bb",
+                    "surface-tint": "#645a73",
+                    "surface-dim": "#cfddd9",
+                    "secondary-fixed": "#c5eadf",
+                    "surface-container-high": "#ddebe7",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed": "#1f182d",
+                    "tertiary": "#645b6f",
+                    "outline": "#7a757d",
+                    "on-secondary-fixed": "#00201a",
+                    "on-primary-container": "#423950",
+                    "on-tertiary-container": "#423a4d",
+                    "primary": "#645a73",
+                    "on-error-container": "#93000a",
+                    "surface-container": "#e3f1ed",
+                    "secondary-container": "#c2e8dc"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#EEFCF8]/70 dark:bg-[#121E1C]/70 backdrop-blur-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">psychology_alt</span>
+<span class="font-headline font-extrabold text-2xl tracking-tight text-[#645A73]">NutriFlow 2.0</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-[#645A73] hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="text-[#645A73] hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="settings_suggest">settings_suggest</span>
+</button>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container">
+<img alt="User profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPY6DrtAFXUMy2oUHK5KwtyVlNkIf5BBVKv6fPMEjIeXB4j2_ba7QTPRQ-ASCJPseyzRxoae7x5jzIUc8PGl7pTAKJp5-I9WU7s-nkWvXTYJNcy2vZmutJCYgM1n5oTbR_hg3pAVzh_pY4100w6g7NtQ0mARHPNO0TC7_LXT1zD0k8m_fybJJbLTM9lB7-nLDYwE_fVY2DvjxuRyNpyweIVcxaSsNp62cJ4pysdTyjGvwi2ZvAQbFdf2gOjAmNQlrnW6FabCCAnvE"/>
+</div>
+</div>
+</header>
+<main class="flex-grow pt-28 pb-40 px-6 max-w-5xl mx-auto w-full">
+<!-- Hero Section -->
+<section class="mb-12">
+<h1 class="font-headline text-5xl font-bold text-primary mb-4 leading-tight">Nudge Decision Engine</h1>
+<p class="text-on-surface-variant text-lg max-w-2xl">Your metabolic data suggests a shift in caffeine source to maintain peak cognitive performance through the afternoon.</p>
+</section>
+<!-- Main Comparison Engine -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 items-stretch">
+<!-- Left Side: Intent & Damage Control -->
+<div class="flex flex-col gap-6">
+<!-- Comparison Card: Left (The Habit) -->
+<div class="bg-surface-container-low rounded-lg p-8 relative overflow-hidden group hover:bg-surface-container transition-colors duration-500 flex-grow">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-9xl">coffee</span>
+</div>
+<div class="relative z-10">
+<span class="font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-6 block">Current Intent</span>
+<h2 class="font-headline text-3xl font-bold text-on-surface-variant mb-8">Skip the Latte</h2>
+<ul class="space-y-6">
+<li class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-outline text-xl">trending_down</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Glucose Spike</p>
+<p class="text-sm text-on-surface-variant">+24mg/dL projected</p>
+</div>
+</li>
+<li class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-outline text-xl">battery_horiz_000</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Energy Crash</p>
+<p class="text-sm text-on-surface-variant">Likely at 3:30 PM</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<!-- Damage Control Card -->
+<button class="w-full text-left bg-surface-container-low/50 hover:bg-surface-container-high transition-all border border-primary-container/20 rounded-lg p-6 group">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">directions_walk</span>
+</div>
+<div>
+<p class="font-headline font-bold text-primary mb-1">Going for the Latte? No problem.</p>
+<p class="text-sm text-on-surface-variant leading-relaxed">We've added a 10min "Walking Meeting" to your 3 PM slot to help metabolize the sugar spike.</p>
+</div>
+<span class="material-symbols-outlined text-outline ml-auto">chevron_right</span>
+</div>
+</button>
+</div>
+<!-- Comparison Card: Right (The Recommendation) -->
+<div class="bg-surface-container-lowest rounded-lg p-8 shadow-[0_40px_80px_rgba(18,30,28,0.08)] ring-2 ring-primary-container/20 relative overflow-hidden flex flex-col">
+<div class="absolute -top-12 -right-12 w-48 h-48 bg-secondary-container/30 rounded-full blur-3xl"></div>
+<div class="relative z-10 flex flex-col h-full">
+<div class="flex justify-between items-start mb-6">
+<span class="font-label text-xs font-bold uppercase tracking-widest text-secondary mb-0 block">AI Recommendation</span>
+<div class="bg-secondary-container text-secondary text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                            Optimal Choice
+                        </div>
+</div>
+<h2 class="font-headline text-3xl font-bold text-primary mb-8">Try Matcha</h2>
+<!-- Enhanced Stats with BRS Impact -->
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="bg-secondary/5 p-4 rounded-DEFAULT border border-secondary/10 relative overflow-hidden group">
+<div class="relative z-10">
+<p class="text-secondary font-headline text-2xl font-extrabold">+5</p>
+<p class="text-xs font-bold text-on-secondary-container uppercase">Projected BRS</p>
+</div>
+<span class="material-symbols-outlined absolute -right-2 -bottom-2 text-4xl opacity-5 text-secondary group-hover:scale-110 transition-transform">trending_up</span>
+</div>
+<div class="bg-secondary/5 p-4 rounded-DEFAULT border border-secondary/10">
+<p class="text-secondary font-headline text-2xl font-extrabold">+12%</p>
+<p class="text-xs font-bold text-on-secondary-container uppercase">Energy Stability</p>
+</div>
+</div>
+<ul class="space-y-6 mb-10 flex-grow">
+<li class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-xl" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">L-Theanine Synergy</p>
+<p class="text-sm text-on-surface-variant">Sustained focus without jitters</p>
+</div>
+</li>
+<li class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-xl" style="font-variation-settings: 'FILL' 1;">shield_moon</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Cortisol Balance</p>
+<p class="text-sm text-on-surface-variant">Protects evening sleep cycle</p>
+</div>
+</li>
+</ul>
+<button class="w-full py-5 bg-gradient-to-br from-secondary to-secondary-fixed-dim text-white font-headline font-bold text-lg rounded-DEFAULT shadow-lg shadow-secondary/20 hover:opacity-90 transition-all active:scale-[0.98] duration-200">
+                        Accept Recommendation
+                    </button>
+</div>
+</div>
+</div>
+<!-- Decision Logic Bento Section -->
+<section class="mt-16">
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-primary">analytics</span>
+<h3 class="font-headline text-2xl font-bold text-primary">Decision Logic</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Logic Card 1: Context -->
+<div class="bg-surface-container-high/40 p-6 rounded-lg border border-outline-variant/10">
+<div class="flex items-center gap-2 mb-4 text-primary">
+<span class="material-symbols-outlined text-xl">dataset</span>
+<span class="font-label font-bold text-sm uppercase">Context</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">Continuous Glucose Monitor (CGM) shows a 15% downward trend in the last 40 minutes. High dairy intake noted at 8:00 AM breakfast.</p>
+</div>
+<!-- Logic Card 2: History -->
+<div class="bg-surface-container-high/40 p-6 rounded-lg border border-outline-variant/10">
+<div class="flex items-center gap-2 mb-4 text-primary">
+<span class="material-symbols-outlined text-xl">history</span>
+<span class="font-label font-bold text-sm uppercase">History</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">Historical data correlates Friday afternoons with "decision fatigue" induced by refined sugar spikes. 82% success rate with herbal alternatives.</p>
+</div>
+<!-- Logic Card 3: Environment -->
+<div class="bg-surface-container-high/40 p-6 rounded-lg border border-outline-variant/10">
+<div class="flex items-center gap-2 mb-4 text-primary">
+<span class="material-symbols-outlined text-xl">cloud</span>
+<span class="font-label font-bold text-sm uppercase">Environment</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">Local weather: 74°F, overcast. Low light levels detected. Circadian rhythm requires a gentle alpha-wave boost via green tea catechins.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-[#EEFCF8]/80 dark:bg-[#121E1C]/80 backdrop-blur-2xl rounded-t-[32px] shadow-[0_-10px_40px_rgba(18,30,28,0.06)]">
+<a class="flex flex-col items-center justify-center text-[#43655C] dark:text-[#C2E8DC] opacity-60 hover:bg-[#AFA3BF]/10 transition-colors px-6 py-2 rounded-full" href="#">
+<span class="material-symbols-outlined" data-icon="home_spark">spark</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium uppercase tracking-wider mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#AFA3BF]/20 dark:bg-[#AFA3BF]/10 text-[#645A73] dark:text-[#EEFCF8] rounded-full px-6 py-2 active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium uppercase tracking-wider mt-1">Map</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#43655C] dark:text-[#C2E8DC] opacity-60 hover:bg-[#AFA3BF]/10 transition-colors px-6 py-2 rounded-full" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium uppercase tracking-wider mt-1">History</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#43655C] dark:text-[#C2E8DC] opacity-60 hover:bg-[#AFA3BF]/10 transition-colors px-6 py-2 rounded-full" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium uppercase tracking-wider mt-1">Settings</span>
+</a>
+</nav>
+</body></html>
